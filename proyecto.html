@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Conocé los proyectos de desarrollo web de Lucila Arteiro."
+    />
+
+    <title>Proyecto | Lucila Arteiro</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Estilos de la página de proyectos -->
+    <link rel="stylesheet" href="proyecto.css" />
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+    <script src="proyecto.js" defer></script>
+  </head>
+
+  <body>
+    <!-- =====================================
+       ENCABEZADO
+  ====================================== -->
+
+    <header class="header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html#inicio" class="brand">
+          Lucila <span>Arteiro.</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html#inicio"> Inicio </a>
+
+          <a href="index.html#sobre-mi"> Sobre mí </a>
+
+          <a href="index.html#tecnologias"> Tecnologías </a>
+
+          <a href="index.html#experiencia"> Experiencia </a>
+
+          <a href="index.html#proyectos"> Proyectos </a>
+
+          <a href="studio.html"> Lucila Studio </a>
+
+          <a href="index.html#contacto"> Contacto </a>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Cambiar tema"
+          >
+            ☾
+          </button>
+
+          <a
+            href="assets/cv-lucila-arteiro.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-small"
+          >
+            Ver CV ↗
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =====================================
+         PORTADA DEL PROYECTO
+    ====================================== -->
+
+      <section class="project-hero">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="container">
+          <!-- Volver al portafolio -->
+          <a href="index.html#proyectos" class="project-back">
+            ← Volver a proyectos
+          </a>
+
+          <div class="project-hero-grid">
+            <!-- Información principal -->
+            <div class="project-hero-info">
+              <span class="tag" id="project-category">
+                Proyecto profesional
+              </span>
+
+              <h1 id="project-title">Cargando proyecto...</h1>
+
+              <p class="project-subtitle" id="project-subtitle"></p>
+
+              <p class="project-description" id="project-description"></p>
+
+              <!-- Tecnologías -->
+              <div class="chips" id="project-technologies"></div>
+
+              <!-- Enlaces -->
+              <div class="project-actions" id="project-actions"></div>
+            </div>
+
+            <!-- Imagen principal -->
+            <div class="project-hero-image">
+              <div class="project-image-frame" id="project-cover">
+                <div class="project-image-placeholder">
+                  <span>✦</span>
+
+                  <p>Vista previa del proyecto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         INFORMACIÓN GENERAL
+    ====================================== -->
+
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">DESCRIPCIÓN DEL PROYECTO</p>
+
+          <h2>
+            Acerca del
+            <span class="gradient-text"> proyecto </span>
+          </h2>
+
+          <div class="project-overview">
+            <div class="project-overview-text">
+              <p id="project-about">Cargando información...</p>
+            </div>
+
+            <!-- Datos principales -->
+            <div class="panel project-facts">
+              <div class="project-fact">
+                <span>Tipo de proyecto</span>
+
+                <strong id="project-type"> — </strong>
+              </div>
+
+              <div class="project-fact">
+                <span>Estado</span>
+
+                <strong id="project-status"> — </strong>
+              </div>
+
+              <div class="project-fact">
+                <span>Mi rol</span>
+
+                <strong id="project-role"> Desarrolladora Web </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         GALERÍA DE IMÁGENES
+    ====================================== -->
+
+      <section class="section section-muted" id="galeria">
+        <div class="container">
+          <p class="eyebrow">VISTA DEL PROYECTO</p>
+
+          <h2>
+            Galería de
+            <span class="gradient-text"> imágenes </span>
+          </h2>
+
+          <p class="section-intro">
+            Explorá las diferentes pantallas y funcionalidades del proyecto.
+          </p>
+
+          <div class="project-gallery">
+            <!-- Imagen principal -->
+            <div class="gallery-main">
+              <button
+                class="gallery-arrow gallery-prev"
+                id="gallery-prev"
+                aria-label="Imagen anterior"
+              >
+                ‹
+              </button>
+
+              <div class="gallery-image-container" id="gallery-image-container">
+                <img
+                  id="gallery-main-image"
+                  src=""
+                  alt="Captura del proyecto"
+                  hidden
+                />
+
+                <div class="gallery-placeholder" id="gallery-placeholder">
+                  <span>▣</span>
+
+                  <p>Próximamente agregaremos las capturas reales.</p>
+                </div>
+              </div>
+
+              <button
+                class="gallery-arrow gallery-next"
+                id="gallery-next"
+                aria-label="Imagen siguiente"
+              >
+                ›
+              </button>
+            </div>
+
+            <!-- Miniaturas -->
+            <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
+
+            <!-- Contador -->
+            <p class="gallery-counter" id="gallery-counter"></p>
+
+            <!-- Ampliar -->
+            <button
+              class="btn btn-outline gallery-expand"
+              id="gallery-expand"
+              type="button"
+            >
+              ⛶ Ampliar imagen
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         FUNCIONALIDADES
+    ====================================== -->
+
+      <section class="section" id="funcionalidades">
+        <div class="container">
+          <p class="eyebrow">QUÉ DESARROLLÉ</p>
+
+          <h2>
+            Funcionalidades
+            <span class="gradient-text"> principales </span>
+          </h2>
+
+          <p class="section-intro">
+            Cada tarjeta presenta una funcionalidad. Podés expandirla para
+            conocer más detalles de su implementación.
+          </p>
+
+          <div class="project-features-grid" id="project-features"></div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         DESAFÍOS Y SOLUCIONES
+    ====================================== -->
+
+      <section class="section section-muted" id="desafios">
+        <div class="container">
+          <p class="eyebrow">DETRÁS DEL DESARROLLO</p>
+
+          <h2>
+            Desafíos y
+            <span class="gradient-text"> soluciones </span>
+          </h2>
+
+          <p class="section-intro">
+            Los problemas que surgieron durante el desarrollo y cómo los abordé.
+          </p>
+
+          <div class="project-challenges" id="project-challenges"></div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         ESTADO DE DESARROLLO
+    ====================================== -->
+
+      <section class="section" id="project-roadmap-section" hidden>
+        <div class="container">
+          <p class="eyebrow">PROGRESO DEL PROYECTO</p>
+
+          <h2>
+            Estado de
+            <span class="gradient-text"> desarrollo </span>
+          </h2>
+
+          <p class="section-intro">
+            Etapas completadas, en proceso y pendientes.
+          </p>
+
+          <div class="project-roadmap" id="project-roadmap"></div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         NAVEGACIÓN ENTRE PROYECTOS
+    ====================================== -->
+
+      <section class="section section-muted">
+        <div class="container">
+          <p class="eyebrow">SEGUÍ EXPLORANDO</p>
+
+          <h2>
+            Otros
+            <span class="gradient-text"> proyectos </span>
+          </h2>
+
+          <div class="project-navigation">
+            <a
+              href="#"
+              class="panel project-nav-card"
+              id="previous-project"
+              hidden
+            >
+              <span>← Proyecto anterior</span>
+
+              <strong id="previous-project-name"> — </strong>
+            </a>
+
+            <a
+              href="index.html#proyectos"
+              class="panel project-nav-card project-nav-all"
+            >
+              <span>Volver al portafolio</span>
+
+              <strong> Ver todos los proyectos ↗ </strong>
+            </a>
+
+            <a href="#" class="panel project-nav-card" id="next-project" hidden>
+              <span>Proyecto siguiente →</span>
+
+              <strong id="next-project-name"> — </strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================
+       VENTANA PARA AMPLIAR IMÁGENES
+  ====================================== -->
+
+    <div
+      class="gallery-lightbox"
+      id="gallery-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Imagen ampliada del proyecto"
+      aria-hidden="true"
+      hidden
+    >
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+        aria-label="Cerrar imagen"
+      >
+        ✕
+      </button>
+
+      <button
+        class="lightbox-arrow"
+        id="lightbox-prev"
+        aria-label="Imagen anterior"
+      >
+        ‹
+      </button>
+
+      <img id="lightbox-image" src="" alt="Captura ampliada del proyecto" />
+
+      <button
+        class="lightbox-arrow"
+        id="lightbox-next"
+        aria-label="Imagen siguiente"
+      >
+        ›
+      </button>
+    </div>
+
+    <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong> Lucila Arteiro </strong>
+
+          <p>Desarrolladora Web Frontend</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html"> Inicio </a>
+
+          <a href="index.html#proyectos"> Proyectos </a>
+
+          <a href="studio.html"> Lucila Studio </a>
+
+          <a href="index.html#contacto"> Contacto </a>
+        </div>
+
+        <p>
+          © <span id="year"></span>
+          Lucila Arteiro
+        </p>
+
+        <a href="#" class="back-top" aria-label="Volver arriba"> ↑ </a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Conocé Lucila Studio, mi emprendimiento de desarrollo y diseño web para negocios, marcas y emprendimientos."
+    />
+
+    <title>Lucila Studio | Lucila Arteiro</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="studio.css" />
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+    <script src="studio.js" defer></script>
+  </head>
+
+  <body>
+    <!-- =====================================
+       ENCABEZADO
+  ====================================== -->
+
+    <header class="header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html#inicio" class="brand">
+          Lucila <span>Arteiro.</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html#inicio"> Inicio </a>
+
+          <a href="index.html#sobre-mi"> Sobre mí </a>
+
+          <a href="index.html#tecnologias"> Tecnologías </a>
+
+          <a href="index.html#experiencia"> Experiencia </a>
+
+          <a href="index.html#proyectos"> Proyectos </a>
+
+          <a href="#studio-inicio" class="active"> Lucila Studio </a>
+
+          <a href="index.html#contacto"> Contacto </a>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Cambiar tema"
+          >
+            ☾
+          </button>
+
+          <a
+            href="assets/cv-lucila-arteiro.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-small"
+          >
+            Ver CV ↗
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =====================================
+         1. PORTADA LUCILA STUDIO
+    ====================================== -->
+
+      <section class="studio-hero" id="studio-inicio">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="container">
+          <a href="index.html" class="studio-back">
+            ← Volver a mi portafolio
+          </a>
+
+          <div class="studio-hero-grid">
+            <div class="studio-hero-content">
+              <span class="studio-badge"> MI EMPRENDIMIENTO </span>
+
+              <p class="eyebrow">DESARROLLO Y DISEÑO WEB</p>
+
+              <h1>
+                Lucila
+                <span class="gradient-text"> Studio. </span>
+              </h1>
+
+              <h2>Soluciones web para marcas y emprendimientos.</h2>
+
+              <p class="studio-hero-description">
+                Lucila Studio es mi emprendimiento dedicado al desarrollo y
+                diseño de páginas web personalizadas para negocios y marcas que
+                buscan tener su propio espacio digital.
+              </p>
+
+              <div class="studio-hero-actions">
+                <a href="#servicios" class="btn btn-primary">
+                  Conocer mis servicios
+                </a>
+
+                <a href="#proceso" class="btn btn-outline"> Cómo trabajo </a>
+
+                <a href="#studio-contacto" class="btn btn-ghost">
+                  Contactarme ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Identidad visual -->
+            <div class="studio-hero-visual">
+              <div class="studio-identity-card">
+                <div class="studio-identity-glow"></div>
+
+                <div class="studio-identity-logo">
+                  <span class="studio-identity-symbol"> L. </span>
+
+                  <strong> LUCILA STUDIO </strong>
+
+                  <small> DESARROLLO Y DISEÑO WEB </small>
+                </div>
+
+                <span class="studio-float studio-float-one">
+                  Diseño responsive
+                </span>
+
+                <span class="studio-float studio-float-two">
+                  Desarrollo web
+                </span>
+
+                <span class="studio-float studio-float-three">
+                  Sitios personalizados
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         2. ACERCA DE LUCILA STUDIO
+    ====================================== -->
+
+      <section class="section" id="sobre-studio">
+        <div class="container">
+          <p class="eyebrow">SOBRE EL EMPRENDIMIENTO</p>
+
+          <h2>
+            Más que una
+            <span class="gradient-text"> página web. </span>
+          </h2>
+
+          <p class="section-intro">
+            Mi objetivo es desarrollar sitios que representen la identidad de
+            cada negocio y que sean prácticos tanto para sus clientes como para
+            quienes los administran.
+          </p>
+
+          <div class="studio-about-grid">
+            <article class="panel studio-about-main">
+              <div class="panel-icon">✦</div>
+
+              <h3>Desarrollo personalizado</h3>
+
+              <p>
+                Cada proyecto se desarrolla teniendo en cuenta las necesidades
+                de la marca, su identidad visual y las funcionalidades que
+                requiere.
+              </p>
+
+              <p>
+                Trabajo tanto en la apariencia de las páginas como en su
+                funcionamiento, buscando crear experiencias claras, modernas y
+                fáciles de utilizar.
+              </p>
+            </article>
+
+            <article class="panel">
+              <div class="panel-icon">📱</div>
+
+              <h3>Diseño responsive</h3>
+
+              <p>
+                Los sitios están pensados para adaptarse a celulares, tablets y
+                computadoras.
+              </p>
+            </article>
+
+            <article class="panel">
+              <div class="panel-icon">⚙</div>
+
+              <h3>Funcionalidad</h3>
+
+              <p>
+                Desarrollo herramientas que facilitan la navegación, la consulta
+                de productos y la administración del sitio.
+              </p>
+            </article>
+
+            <article class="panel">
+              <div class="panel-icon">♡</div>
+
+              <h3>Atención personalizada</h3>
+
+              <p>
+                Mantengo una comunicación directa durante el desarrollo para
+                revisar avances y realizar los ajustes acordados.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         3. SERVICIOS
+    ====================================== -->
+
+      <section class="section section-muted" id="servicios">
+        <div class="container">
+          <p class="eyebrow">QUÉ PUEDO DESARROLLAR</p>
+
+          <h2>
+            Mis
+            <span class="gradient-text"> servicios </span>
+          </h2>
+
+          <p class="section-intro">
+            Desarrollo soluciones web para diferentes tipos de negocios,
+            adaptando las funcionalidades a las necesidades de cada proyecto.
+          </p>
+
+          <div class="studio-services-grid">
+            <article class="panel studio-service-card">
+              <div class="panel-icon">◈</div>
+
+              <h3>Páginas informativas</h3>
+
+              <p>
+                Sitios para presentar una marca, sus servicios, horarios,
+                ubicación e información de contacto.
+              </p>
+
+              <div class="chips">
+                <span>Negocios</span>
+                <span>Emprendimientos</span>
+              </div>
+            </article>
+
+            <article class="panel studio-service-card">
+              <div class="panel-icon">▦</div>
+
+              <h3>Catálogos digitales</h3>
+
+              <p>
+                Páginas con productos organizados en categorías, fotografías,
+                precios y opciones de consulta.
+              </p>
+
+              <div class="chips">
+                <span>Indumentaria</span>
+                <span>Accesorios</span>
+                <span>Productos</span>
+              </div>
+            </article>
+
+            <article class="panel studio-service-card">
+              <div class="panel-icon">🛒</div>
+
+              <h3>Tiendas con carrito</h3>
+
+              <p>
+                Sitios donde los visitantes pueden seleccionar productos y
+                enviar su pedido por WhatsApp.
+              </p>
+
+              <div class="chips">
+                <span>Carrito</span>
+                <span>WhatsApp</span>
+              </div>
+            </article>
+
+            <article class="panel studio-service-card">
+              <div class="panel-icon">⚙</div>
+
+              <h3>Paneles administrativos</h3>
+
+              <p>
+                Interfaces que permiten administrar información y productos sin
+                tener que modificar el código.
+              </p>
+
+              <div class="chips">
+                <span>Gestión</span>
+                <span>Administración</span>
+              </div>
+            </article>
+
+            <article class="panel studio-service-card">
+              <div class="panel-icon">☰</div>
+
+              <h3>Cartas digitales</h3>
+
+              <p>
+                Menús y cartas online para locales gastronómicos, con
+                posibilidad de compartirlos mediante un código QR.
+              </p>
+
+              <div class="chips">
+                <span>Gastronomía</span>
+                <span>QR</span>
+              </div>
+            </article>
+
+            <article class="panel studio-service-card">
+              <div class="panel-icon">✧</div>
+
+              <h3>Ajustes y mantenimiento</h3>
+
+              <p>
+                Modificaciones y mejoras posteriores a la entrega, según las
+                necesidades del sitio.
+              </p>
+
+              <div class="chips">
+                <span>Actualizaciones</span>
+                <span>Mejoras</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         4. PLANES WEB
+    ====================================== -->
+
+      <section class="section" id="planes">
+        <div class="container">
+          <p class="eyebrow">OPCIONES DE DESARROLLO</p>
+
+          <h2>
+            Tres formas de
+            <span class="gradient-text"> comenzar. </span>
+          </h2>
+
+          <p class="section-intro">
+            Trabajo con tres planes que sirven como punto de partida. El alcance
+            y el presupuesto final se adaptan a las necesidades de cada
+            proyecto.
+          </p>
+
+          <div class="studio-plans-grid">
+            <!-- PLAN 1 -->
+            <article class="panel studio-plan-card">
+              <span class="studio-plan-number"> 01 </span>
+
+              <h3>Web Inicial</h3>
+
+              <p>
+                Para negocios que necesitan presentar su marca y ofrecer
+                información de contacto.
+              </p>
+
+              <ul class="studio-plan-list">
+                <li>Página de presentación</li>
+
+                <li>Información del negocio</li>
+
+                <li>Galería de imágenes</li>
+
+                <li>Enlaces a redes sociales</li>
+
+                <li>Botón de WhatsApp</li>
+
+                <li>Diseño responsive</li>
+              </ul>
+
+              <a href="#studio-contacto" class="btn btn-outline">
+                Consultar por este plan
+              </a>
+            </article>
+
+            <!-- PLAN 2 -->
+            <article class="panel studio-plan-card studio-plan-featured">
+              <span class="studio-plan-highlight"> CATÁLOGO DIGITAL </span>
+
+              <span class="studio-plan-number"> 02 </span>
+
+              <h3>Web Plus</h3>
+
+              <p>
+                Para marcas que necesitan mostrar sus productos de manera
+                organizada.
+              </p>
+
+              <ul class="studio-plan-list">
+                <li>Todo lo incluido en Web Inicial</li>
+
+                <li>Catálogo de productos</li>
+
+                <li>Fotografías y precios</li>
+
+                <li>Categorías de productos</li>
+
+                <li>Información de talles y colores</li>
+
+                <li>Consultas por producto</li>
+              </ul>
+
+              <a href="#studio-contacto" class="btn btn-primary">
+                Consultar por este plan
+              </a>
+            </article>
+
+            <!-- PLAN 3 -->
+            <article class="panel studio-plan-card">
+              <span class="studio-plan-number"> 03 </span>
+
+              <h3>Web Completa</h3>
+
+              <p>
+                Para negocios que necesitan una tienda más completa y
+                herramientas de administración.
+              </p>
+
+              <ul class="studio-plan-list">
+                <li>Todo lo incluido en Web Plus</li>
+
+                <li>Carrito de productos</li>
+
+                <li>Envío de pedidos por WhatsApp</li>
+
+                <li>Panel administrativo</li>
+
+                <li>Carga y edición de productos</li>
+
+                <li>Gestión del catálogo</li>
+              </ul>
+
+              <a href="#studio-contacto" class="btn btn-outline">
+                Consultar por este plan
+              </a>
+            </article>
+          </div>
+
+          <p class="studio-plans-note">
+            Los planes se personalizan según el proyecto. La carga de productos,
+            el mantenimiento y otros servicios adicionales pueden presupuestarse
+            por separado.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================
+         5. PROCESO DE TRABAJO
+    ====================================== -->
+
+      <section class="section section-muted" id="proceso">
+        <div class="container">
+          <p class="eyebrow">MI METODOLOGÍA</p>
+
+          <h2>
+            Cómo
+            <span class="gradient-text"> trabajo </span>
+          </h2>
+
+          <p class="section-intro">
+            Organizo cada desarrollo en etapas para que el cliente pueda conocer
+            la propuesta, revisar los avances y participar en las decisiones.
+          </p>
+
+          <div class="studio-process">
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 01 </span>
+
+              <div class="panel">
+                <h3>Primer contacto</h3>
+
+                <p>
+                  Conversamos sobre el negocio, las necesidades del proyecto y
+                  las funcionalidades que debería tener la página.
+                </p>
+
+                <p>
+                  La comunicación puede ser por Instagram, WhatsApp o mediante
+                  una reunión.
+                </p>
+              </div>
+            </article>
+
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 02 </span>
+
+              <div class="panel">
+                <h3>Presupuesto y maqueta</h3>
+
+                <p>
+                  Presento un presupuesto personalizado y una maqueta para
+                  mostrar cómo podría verse la página.
+                </p>
+
+                <p>
+                  El cliente puede evaluar la propuesta antes de decidir si
+                  desea comenzar el desarrollo.
+                </p>
+              </div>
+            </article>
+
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 03 </span>
+
+              <div class="panel">
+                <h3>Diseño y desarrollo</h3>
+
+                <p>
+                  Una vez aceptada la propuesta, definimos el diseño y las
+                  funcionalidades. Después comienzo a programar el sitio.
+                </p>
+              </div>
+            </article>
+
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 04 </span>
+
+              <div class="panel">
+                <h3>Revisión y ajustes</h3>
+
+                <p>
+                  Cuando el desarrollo está avanzado, presentamos el resultado
+                  para que el cliente pueda revisarlo y solicitar los cambios
+                  acordados.
+                </p>
+              </div>
+            </article>
+
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 05 </span>
+
+              <div class="panel">
+                <h3>Publicación y entrega</h3>
+
+                <p>
+                  Después de la aprobación, preparo la publicación del sitio y
+                  realizo la entrega correspondiente.
+                </p>
+
+                <p>
+                  El dominio propio es opcional. Las cuentas de los servicios
+                  utilizados se crean a nombre del cliente.
+                </p>
+              </div>
+            </article>
+
+            <article class="studio-process-step">
+              <span class="studio-step-number"> 06 </span>
+
+              <div class="panel">
+                <h3>Garantía y mantenimiento</h3>
+
+                <p>
+                  Cada proyecto cuenta con condiciones de garantía definidas
+                  según su alcance. La garantía contempla el funcionamiento
+                  acordado.
+                </p>
+
+                <p>
+                  Los cambios y trabajos posteriores que no estén incluidos
+                  pueden cotizarse como mantenimiento.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         6. PROYECTO DESTACADO
+    ====================================== -->
+
+      <section class="section" id="studio-proyectos">
+        <div class="container">
+          <p class="eyebrow">TRABAJOS REALIZADOS</p>
+
+          <h2>
+            Proyecto
+            <span class="gradient-text"> destacado </span>
+          </h2>
+
+          <p class="section-intro">
+            Un ejemplo de cómo aplico el desarrollo web a las necesidades de un
+            negocio real.
+          </p>
+
+          <article class="studio-featured-project">
+            <div class="studio-project-preview">
+              <div class="studio-browser">
+                <div class="studio-browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="studio-browser-content">
+                  <small> TIENDA ONLINE </small>
+
+                  <strong> VIRTUOSA INC </strong>
+
+                  <p>Catálogo · Carrito · Panel administrativo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="studio-project-info">
+              <span class="tag"> DESARROLLO WEB </span>
+
+              <h3>Virtuosa Inc</h3>
+
+              <p>
+                Tienda online de indumentaria con catálogo organizado, carrito
+                de compras conectado a WhatsApp y panel administrativo para
+                gestionar los productos.
+              </p>
+
+              <div class="chips">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Panel administrativo</span>
+              </div>
+
+              <a href="proyecto.html?id=virtuosa" class="btn btn-primary">
+                Ver proyecto completo ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================
+         7. HERRAMIENTAS
+    ====================================== -->
+
+      <section class="section section-muted" id="studio-herramientas">
+        <div class="container">
+          <p class="eyebrow">HERRAMIENTAS DE TRABAJO</p>
+
+          <h2>
+            Tecnologías que
+            <span class="gradient-text"> utilizo </span>
+          </h2>
+
+          <p class="section-intro">
+            Selecciono las herramientas según las características y necesidades
+            de cada desarrollo.
+          </p>
+
+          <div class="studio-tools-grid">
+            <div class="studio-tool">
+              <span>HTML5</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>CSS3</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>JavaScript</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>Git</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>GitHub</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>Netlify</span>
+            </div>
+
+            <div class="studio-tool">
+              <span>Supabase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         8. CONTACTO
+    ====================================== -->
+
+      <section class="section studio-contact-section" id="studio-contacto">
+        <div class="container">
+          <div class="studio-contact-card">
+            <div class="studio-contact-glow"></div>
+
+            <div class="studio-contact-content">
+              <p class="eyebrow">HABLEMOS DE TU PROYECTO</p>
+
+              <h2>
+                ¿Tenés una idea
+                <span class="gradient-text"> en mente? </span>
+              </h2>
+
+              <p>
+                Si necesitás una página web para tu negocio o emprendimiento,
+                podemos conversar sobre lo que querés desarrollar.
+              </p>
+
+              <p>
+                Cualquier consulta o pregunta es bienvenida, sin compromiso.
+              </p>
+
+              <div class="studio-contact-actions">
+                <a
+                  href="mailto:lucilaarteiro2003@gmail.com?subject=Consulta%20para%20Lucila%20Studio"
+                  class="btn btn-primary"
+                >
+                  Enviar un correo
+                </a>
+
+                <a
+                  href="https://www.instagram.com/"
+                  class="btn btn-outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong> Lucila Arteiro </strong>
+
+          <p>Desarrolladora Web Frontend</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html"> Portafolio </a>
+
+          <a href="#servicios"> Servicios </a>
+
+          <a href="#planes"> Planes </a>
+
+          <a href="#proceso"> Cómo trabajo </a>
+
+          <a href="#studio-contacto"> Contacto </a>
+        </div>
+
+        <p>
+          © <span id="year"></span>
+          Lucila Arteiro
+        </p>
+
+        <a href="#studio-inicio" class="back-top" aria-label="Volver arriba">
+          ↑
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

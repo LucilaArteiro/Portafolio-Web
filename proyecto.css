@@ -1,0 +1,863 @@
+/* =========================================
+   LUCILA ARTEIRO — DETALLE DE PROYECTOS
+   proyecto.css
+
+   Complementa styles.css
+========================================= */
+
+/* =========================================
+   1. PORTADA DEL PROYECTO
+========================================= */
+
+.project-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 690px;
+  padding: 145px 0 100px;
+}
+
+.project-hero .glow {
+  z-index: -1;
+}
+
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 55px;
+
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.project-back:hover {
+  color: var(--pink);
+  transform: translateX(-5px);
+}
+
+.project-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.project-hero-info {
+  position: relative;
+  z-index: 2;
+}
+
+.project-hero-info h1 {
+  margin: 15px 0 20px;
+
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  overflow-wrap: anywhere;
+}
+
+.project-subtitle {
+  margin-bottom: 22px;
+
+  color: var(--pink);
+  font-family: var(--font-title);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.project-description {
+  max-width: 590px;
+
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.project-hero-info .chips {
+  margin-top: 28px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.project-actions:empty {
+  display: none;
+}
+
+/* =========================================
+   2. IMAGEN PRINCIPAL
+========================================= */
+
+.project-hero-image {
+  min-width: 0;
+  perspective: 1000px;
+}
+
+.project-image-frame {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 370px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(185, 153, 236, 0.4);
+  border-radius: 25px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(129, 85, 238, 0.32),
+    rgba(228, 119, 212, 0.18)
+  );
+
+  box-shadow: 0 25px 75px rgba(0, 0, 0, 0.2), 0 0 45px rgba(129, 85, 238, 0.12);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-image-frame:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 35px 85px rgba(0, 0, 0, 0.25), 0 0 50px rgba(129, 85, 238, 0.18);
+}
+
+.project-image-frame img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.project-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  width: 100%;
+  min-height: 370px;
+
+  padding: 35px;
+  text-align: center;
+}
+
+.project-image-placeholder span {
+  color: var(--pink);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.project-image-placeholder p {
+  max-width: 250px;
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   3. INFORMACIÓN GENERAL
+========================================= */
+
+.project-overview {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: start;
+  gap: 55px;
+
+  margin-top: 45px;
+}
+
+.project-overview-text {
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.project-overview-text p + p {
+  margin-top: 20px;
+}
+
+.project-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.project-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-fact:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-fact span {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.project-fact strong {
+  color: var(--text);
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+}
+
+/* =========================================
+   4. GALERÍA
+========================================= */
+
+.project-gallery {
+  max-width: 1050px;
+  margin: 45px auto 0;
+}
+
+.gallery-main {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 470px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: 23px;
+
+  background: var(--surface);
+}
+
+.gallery-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 470px;
+
+  overflow: hidden;
+}
+
+.gallery-image-container img {
+  display: block;
+
+  width: 100%;
+  max-height: 650px;
+
+  object-fit: contain;
+}
+
+.gallery-image-container img[hidden] {
+  display: none;
+}
+
+.gallery-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  min-height: 470px;
+  width: 100%;
+
+  padding: 35px;
+  text-align: center;
+}
+
+.gallery-placeholder span {
+  color: var(--pink);
+  font-size: 4.5rem;
+}
+
+.gallery-placeholder p {
+  max-width: 350px;
+}
+
+/* Flechas */
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  display: grid;
+  place-items: center;
+
+  width: 46px;
+  height: 46px;
+
+  transform: translateY(-50%);
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: rgba(23, 20, 44, 0.88);
+  color: #ffffff;
+
+  font-size: 2rem;
+  line-height: 1;
+
+  backdrop-filter: blur(10px);
+
+  transition: background 0.2s ease, scale 0.2s ease;
+}
+
+.gallery-arrow:hover {
+  background: var(--primary);
+  scale: 1.07;
+}
+
+.gallery-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.gallery-prev {
+  left: 20px;
+}
+
+.gallery-next {
+  right: 20px;
+}
+
+/* Miniaturas */
+
+.gallery-thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  margin-top: 22px;
+}
+
+.gallery-thumbnail {
+  width: 100px;
+  height: 75px;
+
+  padding: 4px;
+
+  overflow: hidden;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  background: var(--surface);
+  cursor: pointer;
+
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-thumbnail:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-thumbnail.active {
+  border-color: var(--pink);
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.gallery-counter {
+  margin-top: 18px;
+
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+.gallery-expand {
+  display: flex;
+  width: fit-content;
+
+  margin: 20px auto 0;
+}
+
+/* =========================================
+   5. VENTANA PARA AMPLIAR IMÁGENES
+========================================= */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 65px 25px 25px;
+
+  background: rgba(10, 7, 20, 0.96);
+  backdrop-filter: blur(20px);
+}
+
+.gallery-lightbox[hidden] {
+  display: none;
+}
+
+.gallery-lightbox img {
+  display: block;
+
+  max-width: min(85vw, 1200px);
+  max-height: 85vh;
+
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+
+  display: grid;
+  place-items: center;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  font-size: 1.3rem;
+}
+
+.lightbox-arrow {
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  font-size: 2rem;
+}
+
+.lightbox-close:hover,
+.lightbox-arrow:hover {
+  background: var(--primary);
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+/* =========================================
+   6. FUNCIONALIDADES
+========================================= */
+
+.project-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 23px;
+
+  margin-top: 45px;
+}
+
+.project-feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-height: 240px;
+}
+
+.project-feature-card .panel-icon {
+  margin-bottom: 8px;
+}
+
+.project-feature-card h3 {
+  margin-bottom: 0;
+}
+
+.project-feature-card details {
+  margin-top: auto;
+}
+
+/* =========================================
+   7. DESAFÍOS Y SOLUCIONES
+========================================= */
+
+.project-challenges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+
+  margin-top: 45px;
+}
+
+.project-challenge-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-challenge-card h3 {
+  margin-bottom: 0;
+}
+
+.challenge-step {
+  padding: 15px;
+
+  border-radius: 13px;
+  background: rgba(129, 85, 238, 0.09);
+}
+
+.challenge-step strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--pink);
+  font-size: 0.85rem;
+}
+
+.challenge-step p {
+  font-size: 0.88rem;
+}
+
+/* =========================================
+   8. ROADMAP DE DESARROLLO
+========================================= */
+
+#project-roadmap-section[hidden] {
+  display: none;
+}
+
+.project-roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  max-width: 900px;
+  margin-top: 45px;
+}
+
+.roadmap-item {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.roadmap-indicator {
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: var(--surface);
+  border: 2px solid var(--border);
+
+  color: var(--text);
+  font-weight: 700;
+}
+
+.roadmap-item.completed .roadmap-indicator {
+  background: rgba(67, 190, 122, 0.14);
+  border-color: #43be7a;
+  color: #43be7a;
+}
+
+.roadmap-item.progress .roadmap-indicator {
+  background: rgba(129, 85, 238, 0.15);
+  border-color: var(--primary);
+  color: var(--primary-light);
+}
+
+.roadmap-item.pending .roadmap-indicator {
+  color: var(--text-muted);
+}
+
+.roadmap-content {
+  flex: 1;
+  min-width: 0;
+
+  padding: 22px;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--surface);
+}
+
+.roadmap-content h3 {
+  margin-bottom: 10px;
+}
+
+.roadmap-status {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: var(--pink);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   9. NAVEGACIÓN ENTRE PROYECTOS
+========================================= */
+
+.project-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.project-nav-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 145px;
+}
+
+.project-nav-card[hidden] {
+  display: none;
+}
+
+.project-nav-card span {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.project-nav-card strong {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+}
+
+.project-nav-card:hover strong {
+  color: var(--pink);
+}
+
+.project-nav-all {
+  text-align: center;
+  align-items: center;
+}
+
+/* =========================================
+   10. ESTADOS VACÍOS
+========================================= */
+
+.project-empty {
+  padding: 40px 25px;
+
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+
+  text-align: center;
+  background: var(--surface);
+}
+
+.project-empty h2 {
+  margin-bottom: 15px;
+}
+
+.project-empty p {
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   11. RESPONSIVE — TABLETS
+========================================= */
+
+@media (max-width: 1000px) {
+  .project-hero-grid {
+    gap: 35px;
+  }
+
+  .project-overview {
+    gap: 30px;
+  }
+
+  .project-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   12. RESPONSIVE — CELULARES
+========================================= */
+
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: auto;
+    padding: 115px 0 75px;
+  }
+
+  .project-back {
+    margin-bottom: 40px;
+  }
+
+  .project-hero-grid,
+  .project-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero-grid {
+    gap: 45px;
+  }
+
+  .project-hero-info h1 {
+    font-size: clamp(2.6rem, 9vw, 4rem);
+  }
+
+  .project-image-frame,
+  .project-image-placeholder {
+    min-height: 290px;
+  }
+
+  .project-features-grid,
+  .project-challenges {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-main,
+  .gallery-image-container,
+  .gallery-placeholder {
+    min-height: 300px;
+  }
+
+  .gallery-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+  }
+
+  .gallery-prev {
+    left: 10px;
+  }
+
+  .gallery-next {
+    right: 10px;
+  }
+
+  .gallery-thumbnail {
+    width: 75px;
+    height: 60px;
+  }
+
+  .gallery-lightbox {
+    gap: 5px;
+    padding: 70px 8px 20px;
+  }
+
+  .gallery-lightbox img {
+    max-width: calc(100vw - 100px);
+    max-height: 75vh;
+  }
+
+  .lightbox-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+  }
+
+  .project-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   13. ACCESIBILIDAD
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-image-frame,
+  .gallery-arrow,
+  .gallery-thumbnail,
+  .project-nav-card {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* =========================================
+   AJUSTES DE LA GALERÍA
+========================================= */
+
+.gallery-placeholder[hidden],
+.gallery-expand[hidden],
+.project-nav-card[hidden] {
+  display: none;
+}
+
+.gallery-image-container img:not([hidden]) {
+  cursor: zoom-in;
+}
+
+.project-challenge-card details {
+  margin-top: 12px;
+}
+
+.project-challenge-card details[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-challenge-card details[open] summary {
+  margin-bottom: 0;
+}
+
+.gallery-thumbnail:focus-visible,
+.gallery-arrow:focus-visible,
+.lightbox-arrow:focus-visible,
+.lightbox-close:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 3px;
+}

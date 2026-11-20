@@ -1,0 +1,1162 @@
+/* =========================================
+   LUCILA ARTEIRO — LUCILA STUDIO
+   studio.css
+
+   Complementa styles.css
+========================================= */
+
+/* =========================================
+   1. PORTADA
+========================================= */
+
+.studio-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 135px 0 110px;
+}
+
+.studio-hero .glow {
+  z-index: -1;
+}
+
+.studio-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 55px;
+
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.studio-back:hover {
+  color: var(--pink);
+  transform: translateX(-5px);
+}
+
+.studio-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+  gap: 65px;
+}
+
+.studio-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.studio-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 15px;
+  margin-bottom: 25px;
+
+  border: 1px solid rgba(228, 119, 212, 0.4);
+  border-radius: 50px;
+
+  background: rgba(228, 119, 212, 0.1);
+  color: var(--pink);
+
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.studio-hero h1 {
+  margin-bottom: 22px;
+
+  font-size: clamp(3.3rem, 6vw, 6rem);
+}
+
+.studio-hero h2 {
+  max-width: 600px;
+  margin-bottom: 25px;
+
+  font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+  font-weight: 500;
+}
+
+.studio-hero-description {
+  max-width: 550px;
+
+  font-size: 1.03rem;
+  line-height: 1.9;
+}
+
+.studio-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  margin-top: 35px;
+}
+
+/* =========================================
+   2. IDENTIDAD VISUAL
+========================================= */
+
+.studio-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+}
+
+.studio-identity-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: min(100%, 430px);
+  aspect-ratio: 1 / 1;
+
+  border: 1px solid rgba(228, 119, 212, 0.35);
+  border-radius: 35px;
+
+  background: linear-gradient(135deg, #302044 0%, #1c1733 55%, #472451 100%);
+
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.25), 0 0 50px rgba(129, 85, 238, 0.13);
+
+  transform-style: preserve-3d;
+
+  transition: transform 0.3s ease;
+}
+
+.studio-identity-glow {
+  position: absolute;
+  inset: 12%;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(228, 119, 212, 0.3),
+    transparent 70%
+  );
+
+  filter: blur(30px);
+
+  animation: studioGlow 8s ease-in-out infinite alternate;
+
+  pointer-events: none;
+}
+
+@keyframes studioGlow {
+  from {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.studio-identity-logo {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  text-align: center;
+  color: #ffffff;
+
+  transform: translateZ(35px);
+}
+
+.studio-identity-symbol {
+  display: grid;
+  place-items: center;
+
+  width: 125px;
+  height: 125px;
+
+  margin-bottom: 15px;
+
+  border: 2px solid rgba(228, 119, 212, 0.65);
+  border-radius: 32px;
+
+  background: rgba(129, 85, 238, 0.14);
+
+  color: #e477d4;
+  font-family: var(--font-title);
+  font-size: 4.3rem;
+  font-weight: 700;
+
+  box-shadow: 0 0 35px rgba(228, 119, 212, 0.15);
+}
+
+.studio-identity-logo strong {
+  font-family: var(--font-title);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  letter-spacing: 0.16em;
+}
+
+.studio-identity-logo small {
+  color: #d9c4e9;
+  font-size: 0.65rem;
+  letter-spacing: 0.24em;
+}
+
+/* Tarjetas flotantes */
+
+.studio-float {
+  position: absolute;
+  z-index: 5;
+
+  padding: 11px 15px;
+
+  border: 1px solid rgba(228, 119, 212, 0.35);
+  border-radius: 13px;
+
+  background: rgba(48, 36, 68, 0.92);
+  color: #ffffff;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+  backdrop-filter: blur(12px);
+
+  animation: studioFloat 5s ease-in-out infinite;
+}
+
+.studio-float-one {
+  top: 13%;
+  left: -40px;
+}
+
+.studio-float-two {
+  top: 50%;
+  right: -45px;
+  animation-delay: 1.3s;
+}
+
+.studio-float-three {
+  bottom: 12%;
+  left: -35px;
+  animation-delay: 2.5s;
+}
+
+@keyframes studioFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* =========================================
+   3. SOBRE LUCILA STUDIO
+========================================= */
+
+.studio-about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+
+  margin-top: 45px;
+}
+
+.studio-about-main {
+  grid-column: span 3;
+
+  background: linear-gradient(120deg, rgba(129, 85, 238, 0.2), var(--surface));
+}
+
+.studio-about-main p + p {
+  margin-top: 15px;
+}
+
+/* =========================================
+   4. SERVICIOS
+========================================= */
+
+.studio-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+
+  margin-top: 45px;
+}
+
+.studio-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  min-height: 290px;
+}
+
+.studio-service-card h3 {
+  margin-bottom: 15px;
+}
+
+.studio-service-card .chips {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* =========================================
+   5. PLANES WEB
+========================================= */
+
+.studio-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+
+  margin-top: 55px;
+}
+
+.studio-plan-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  min-height: 540px;
+  padding: 35px 28px;
+}
+
+.studio-plan-number {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  color: var(--primary-light);
+
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.studio-plan-card h3 {
+  margin-bottom: 16px;
+  font-size: 1.7rem;
+}
+
+.studio-plan-card > p {
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.studio-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.studio-plan-list li {
+  position: relative;
+
+  padding-left: 27px;
+
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.studio-plan-list li::before {
+  content: '✓';
+
+  position: absolute;
+  left: 0;
+
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.studio-plan-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.studio-plan-featured {
+  border-color: rgba(228, 119, 212, 0.65);
+
+  background: linear-gradient(
+    155deg,
+    rgba(129, 85, 238, 0.25),
+    var(--surface) 55%
+  );
+
+  box-shadow: 0 25px 70px rgba(129, 85, 238, 0.15);
+}
+
+.studio-plan-highlight {
+  position: absolute;
+
+  top: -17px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 9px 18px;
+
+  border-radius: 50px;
+
+  background: var(--gradient);
+  color: #ffffff;
+
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.studio-plans-note {
+  max-width: 780px;
+
+  margin: 30px auto 0;
+
+  text-align: center;
+  font-size: 0.84rem;
+}
+
+/* =========================================
+   6. PROCESO DE TRABAJO
+========================================= */
+
+.studio-process {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 930px;
+  margin: 55px auto 0;
+}
+
+.studio-process::before {
+  content: '';
+
+  position: absolute;
+
+  top: 20px;
+  bottom: 20px;
+  left: 30px;
+
+  width: 2px;
+
+  background: linear-gradient(to bottom, var(--primary), var(--pink));
+}
+
+.studio-process-step {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  align-items: start;
+  gap: 25px;
+}
+
+.studio-step-number {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  place-items: center;
+
+  width: 62px;
+  height: 62px;
+
+  border: 2px solid var(--primary-light);
+  border-radius: 50%;
+
+  background: var(--bg-soft);
+  color: var(--pink);
+
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  box-shadow: 0 0 0 8px var(--bg-soft);
+}
+
+.studio-process-step .panel {
+  min-height: 145px;
+}
+
+.studio-process-step .panel p + p {
+  margin-top: 14px;
+}
+
+/* =========================================
+   7. PROYECTO DESTACADO
+========================================= */
+
+.studio-featured-project {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 45px;
+
+  margin-top: 45px;
+  padding: 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 25px;
+
+  background: var(--surface);
+}
+
+.studio-project-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 350px;
+  padding: 25px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(129, 85, 238, 0.4),
+    rgba(228, 119, 212, 0.23)
+  );
+}
+
+.studio-browser {
+  width: 100%;
+  max-width: 470px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  background: #20182f;
+
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+
+  transform: rotate(-2deg);
+
+  transition: transform 0.4s ease;
+}
+
+.studio-browser:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.studio-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  height: 40px;
+  padding: 0 16px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.studio-browser-bar span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background: #e477d4;
+}
+
+.studio-browser-bar span:nth-child(2) {
+  background: #a78bfa;
+}
+
+.studio-browser-bar span:nth-child(3) {
+  background: #8155ee;
+}
+
+.studio-browser-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  min-height: 250px;
+  padding: 25px;
+
+  text-align: center;
+}
+
+.studio-browser-content small {
+  color: #e477d4;
+  letter-spacing: 0.2em;
+}
+
+.studio-browser-content strong {
+  color: #ffffff;
+
+  font-family: var(--font-title);
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  letter-spacing: 0.08em;
+}
+
+.studio-browser-content p {
+  color: #d9c4e9;
+  font-size: 0.8rem;
+}
+
+.studio-project-info h3 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.studio-project-info .btn {
+  margin-top: 28px;
+}
+
+/* =========================================
+   8. HERRAMIENTAS
+========================================= */
+
+.studio-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.studio-tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100px;
+  padding: 20px;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--surface);
+
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.studio-tool:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--pink);
+  background: var(--surface-hover);
+}
+
+.studio-tool span {
+  color: var(--text);
+
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   9. CONTACTO
+========================================= */
+
+.studio-contact-section {
+  overflow: hidden;
+}
+
+.studio-contact-card {
+  position: relative;
+  isolation: isolate;
+
+  overflow: hidden;
+
+  padding: 80px 45px;
+
+  border: 1px solid rgba(228, 119, 212, 0.35);
+  border-radius: 30px;
+
+  background: linear-gradient(135deg, var(--surface), var(--bg-soft));
+
+  text-align: center;
+}
+
+.studio-contact-glow {
+  position: absolute;
+  z-index: -1;
+
+  top: -200px;
+  left: 50%;
+
+  width: 650px;
+  height: 650px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(129, 85, 238, 0.25),
+    transparent 70%
+  );
+
+  filter: blur(35px);
+
+  pointer-events: none;
+}
+
+.studio-contact-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.studio-contact-content h2 {
+  margin-bottom: 25px;
+}
+
+.studio-contact-content p {
+  margin-bottom: 15px;
+}
+
+.studio-contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+/* =========================================
+   10. ANIMACIONES DE ENTRADA
+========================================= */
+
+.studio-hero-content {
+  animation: studioEnterLeft 0.9s ease both;
+}
+
+.studio-hero-visual {
+  animation: studioEnterRight 1s ease 0.2s both;
+}
+
+@keyframes studioEnterLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes studioEnterRight {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================================
+   11. RESPONSIVE — TABLETS
+========================================= */
+
+@media (max-width: 1050px) {
+  .studio-hero-grid {
+    gap: 35px;
+  }
+
+  .studio-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .studio-plans-grid {
+    gap: 15px;
+  }
+
+  .studio-plan-card {
+    padding: 32px 22px;
+  }
+
+  .studio-featured-project {
+    gap: 30px;
+  }
+}
+
+/* =========================================
+   12. RESPONSIVE — PANTALLAS MEDIANAS
+========================================= */
+
+@media (max-width: 900px) {
+  .studio-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .studio-hero-content {
+    max-width: 720px;
+  }
+
+  .studio-hero-visual {
+    max-width: 500px;
+    width: 100%;
+
+    margin-inline: auto;
+  }
+
+  .studio-identity-card {
+    width: min(80%, 400px);
+  }
+
+  .studio-plans-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+
+    max-width: 650px;
+    margin-inline: auto;
+  }
+
+  .studio-plan-card {
+    min-height: auto;
+    padding: 35px;
+  }
+
+  .studio-plan-list {
+    margin-bottom: 35px;
+  }
+
+  .studio-featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-tools-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   13. RESPONSIVE — CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+  .studio-hero {
+    min-height: auto;
+    padding: 115px 0 80px;
+  }
+
+  .studio-back {
+    margin-bottom: 40px;
+  }
+
+  .studio-hero h1 {
+    font-size: clamp(3rem, 11vw, 4.5rem);
+  }
+
+  .studio-hero h2 {
+    font-size: 1.35rem;
+  }
+
+  .studio-hero-description {
+    font-size: 0.95rem;
+  }
+
+  .studio-hero-actions {
+    gap: 10px;
+  }
+
+  .studio-hero-actions .btn {
+    width: 100%;
+  }
+
+  .studio-identity-card {
+    width: min(78%, 320px);
+    border-radius: 24px;
+  }
+
+  .studio-identity-symbol {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 22px;
+    font-size: 3rem;
+  }
+
+  .studio-identity-logo strong {
+    font-size: 1rem;
+  }
+
+  .studio-identity-logo small {
+    font-size: 0.5rem;
+  }
+
+  .studio-float {
+    padding: 8px 10px;
+    font-size: 0.62rem;
+  }
+
+  .studio-float-one {
+    left: -28px;
+  }
+
+  .studio-float-two {
+    right: -28px;
+  }
+
+  .studio-float-three {
+    left: -20px;
+  }
+
+  .studio-about-grid,
+  .studio-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-about-main {
+    grid-column: auto;
+  }
+
+  .studio-service-card {
+    min-height: auto;
+  }
+
+  .studio-process {
+    gap: 22px;
+  }
+
+  .studio-process::before {
+    left: 22px;
+  }
+
+  .studio-process-step {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+  .studio-step-number {
+    width: 45px;
+    height: 45px;
+
+    font-size: 0.85rem;
+  }
+
+  .studio-process-step .panel {
+    padding: 20px;
+  }
+
+  .studio-featured-project {
+    padding: 17px;
+  }
+
+  .studio-project-preview {
+    min-height: 250px;
+    padding: 15px;
+  }
+
+  .studio-browser-content {
+    min-height: 190px;
+  }
+
+  .studio-tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .studio-tool {
+    min-height: 80px;
+  }
+
+  .studio-contact-card {
+    padding: 55px 22px;
+  }
+
+  .studio-contact-actions .btn {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   14. PANTALLAS PEQUEÑAS
+========================================= */
+
+@media (max-width: 380px) {
+  .studio-identity-card {
+    width: 76%;
+  }
+
+  .studio-float {
+    font-size: 0.55rem;
+    padding: 7px 8px;
+  }
+
+  .studio-plan-card {
+    padding: 30px 20px;
+  }
+
+  .studio-process-step {
+    gap: 12px;
+  }
+
+  .studio-tools-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================
+   15. ACCESIBILIDAD
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-hero-content,
+  .studio-hero-visual {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .studio-identity-glow,
+  .studio-float {
+    animation: none;
+  }
+
+  .studio-browser,
+  .studio-identity-card {
+    transition: none;
+  }
+}
+
+/* =========================================
+   INTERACCIONES DE STUDIO.JS
+========================================= */
+
+/* Animaciones al aparecer */
+
+.studio-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+
+  transition: opacity 0.65s ease, transform 0.65s ease;
+
+  transition-delay: var(--studio-delay, 0ms);
+}
+
+.studio-reveal.studio-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto de iluminación en planes */
+
+.studio-plan-card {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.studio-plan-card::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  border-radius: inherit;
+
+  background: radial-gradient(
+    280px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(228, 119, 212, 0.12),
+    transparent 75%
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.studio-plan-card:hover::before {
+  opacity: 1;
+}
+
+/* Navegación activa */
+
+.nav-links a.studio-nav-active {
+  color: var(--pink);
+}
+
+/* Plan seleccionado */
+
+.studio-selected-plan {
+  display: inline-block;
+
+  padding: 12px 20px;
+  margin-top: 15px;
+
+  border: 1px solid rgba(228, 119, 212, 0.4);
+  border-radius: 12px;
+
+  background: rgba(228, 119, 212, 0.1);
+  color: var(--text);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Desplazamiento a secciones */
+
+#studio-inicio,
+#servicios,
+#planes,
+#proceso,
+#studio-proyectos,
+#studio-contacto {
+  scroll-margin-top: 105px;
+}
+
+/* Movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .studio-plan-card::before {
+    display: none;
+  }
+}

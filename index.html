@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portafolio profesional de Lucila Arteiro, desarrolladora web frontend."
+    />
+
+    <title>Lucila Arteiro | Desarrolladora Web Front End</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ACCESIBILIDAD -->
+    <a href="#inicio" class="skip-link"> Ir al contenido </a>
+
+    <!-- ======================================
+       ENCABEZADO Y NAVEGACIÓN
+  ======================================= -->
+
+    <header class="header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="#inicio" class="brand"> Lucila <span>Arteiro.</span> </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#tecnologias">Tecnologías</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="studio.html">Lucila Studio</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Cambiar tema"
+          >
+            ☾
+          </button>
+
+          <a
+            href="assets/cv-lucila-arteiro.pdf"
+            class="btn btn-primary btn-small"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver CV ↗
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ======================================
+         INICIO / PORTADA
+    ======================================= -->
+
+      <section class="hero" id="inicio">
+        <!-- Degradados animados -->
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="container hero-grid">
+          <!-- Presentación -->
+          <div class="hero-copy">
+            <span class="availability enter">
+              ● Abierta a oportunidades laborales
+            </span>
+
+            <p class="eyebrow enter">PORTAFOLIO PROFESIONAL</p>
+
+            <h1 class="enter">
+              Hola, soy
+              <span class="gradient-text"> Lucila Arteiro. </span>
+            </h1>
+
+            <h2 class="enter">Desarrolladora Web Front End</h2>
+
+            <p class="lead enter">
+              Desarrollo sitios y aplicaciones web modernas, funcionales y
+              adaptadas a diferentes dispositivos.
+            </p>
+
+            <div class="hero-buttons enter">
+              <a href="#proyectos" class="btn btn-primary">
+                ▣ Ver proyectos ↗
+              </a>
+
+              <a
+                href="assets/cv-lucila-arteiro.pdf"
+                class="btn btn-outline"
+                download
+              >
+                ↓ Descargar CV
+              </a>
+
+              <a href="#contacto" class="btn btn-ghost"> ✉ Contactarme </a>
+            </div>
+          </div>
+
+          <!-- Fotografía y tarjetas flotantes -->
+          <div class="hero-art enter">
+            <div class="portrait-tilt" id="portrait-tilt">
+              <div class="portrait">
+                <img
+                  src="assets/foto-perfil.png"
+                  alt="Fotografía profesional de Lucila Arteiro"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                />
+
+                <div class="portrait-placeholder" style="display: none">
+                  <span>✦</span>
+                  <p>Tu fotografía profesional</p>
+                  <small>assets/foto-perfil.jpg</small>
+                </div>
+              </div>
+
+              <span class="tech-float float-html"> HTML5 </span>
+
+              <span class="tech-float float-css"> CSS3 </span>
+
+              <span class="tech-float float-js"> JavaScript </span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#sobre-mi" class="scroll-hint"> Deslizá para explorar ↓ </a>
+      </section>
+
+      <!-- ======================================
+         SOBRE MÍ
+    ======================================= -->
+
+      <section class="section" id="sobre-mi">
+        <div class="container">
+          <p class="eyebrow">CONOCÉ MÁS SOBRE MÍ</p>
+
+          <h2>Sobre <span class="gradient-text">mí</span></h2>
+
+          <p class="section-intro">
+            Soy desarrolladora web frontend. Me interesa crear experiencias
+            digitales funcionales, intuitivas y adaptadas a las necesidades de
+            cada proyecto.
+          </p>
+
+          <div class="about-grid">
+            <!-- Formación -->
+            <article class="panel about-wide">
+              <div class="panel-icon">🎓</div>
+              <h3>Front End Developer</h3>
+              <p>Digitalers Front End Developer · 2026</p>
+              <span>Formación finalizada</span>
+
+              <details>
+                <summary>Conocer más</summary>
+
+                <p>
+                  Mi formación se complementa con la práctica en proyectos web
+                  reales. Incorporaremos certificados cuando estén disponibles.
+                </p>
+              </details>
+            </article>
+
+            <!-- Qué desarrollo -->
+            <article class="panel">
+              <div class="panel-icon">⌘</div>
+
+              <h3>Qué desarrollo</h3>
+
+              <p>Sitios web, catálogos y paneles administrativos.</p>
+
+              <details>
+                <summary>Conocer más</summary>
+
+                <p>
+                  Me enfoco en interfaces responsive, experiencia de usuario y
+                  funcionalidades prácticas.
+                </p>
+              </details>
+            </article>
+
+            <!-- Cómo trabajo -->
+            <article class="panel">
+              <div class="panel-icon">✧</div>
+
+              <h3>Cómo trabajo</h3>
+
+              <p>Organización, comunicación y resolución de problemas.</p>
+
+              <details>
+                <summary>Conocer más</summary>
+
+                <p>
+                  Busco soluciones claras y fáciles de utilizar, tanto para
+                  visitantes como para administradores.
+                </p>
+              </details>
+            </article>
+
+            <!-- Objetivo profesional -->
+            <article class="panel">
+              <div class="panel-icon">◎</div>
+
+              <h3>Mi objetivo</h3>
+
+              <p>
+                Continuar creciendo profesionalmente como desarrolladora
+                frontend.
+              </p>
+
+              <details>
+                <summary>Conocer más</summary>
+
+                <p>
+                  Me interesan oportunidades para desarrollar proyectos web y
+                  colaborar con equipos.
+                </p>
+              </details>
+            </article>
+
+            <!-- GitHub -->
+            <article class="panel github-panel">
+              <div class="panel-icon">⌁</div>
+
+              <h3>GitHub</h3>
+
+              <p>Conocé mis repositorios públicos.</p>
+
+              <a
+                href="https://github.com/LucilaArteiro"
+                target="_blank"
+                rel="noopener"
+                class="text-link"
+              >
+                Visitar perfil ↗
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+         TECNOLOGÍAS
+    ======================================= -->
+
+      <section class="section section-muted" id="tecnologias">
+        <div class="container">
+          <p class="eyebrow">MIS CONOCIMIENTOS</p>
+
+          <h2>
+            Tecnologías y
+            <span class="gradient-text">herramientas</span>
+          </h2>
+
+          <p class="section-intro">
+            Seleccioná una categoría y tocá cada tarjeta para conocer su uso.
+          </p>
+
+          <div
+            class="tabs"
+            role="tablist"
+            aria-label="Categorías de tecnologías"
+          >
+            <button
+              class="tab active"
+              data-tech-tab="frontend"
+              role="tab"
+              aria-selected="true"
+            >
+              Frontend
+            </button>
+
+            <button
+              class="tab"
+              data-tech-tab="herramientas"
+              role="tab"
+              aria-selected="false"
+            >
+              Herramientas
+            </button>
+
+            <button
+              class="tab"
+              data-tech-tab="servicios"
+              role="tab"
+              aria-selected="false"
+            >
+              Servicios
+            </button>
+          </div>
+
+          <!-- JavaScript agregará las tarjetas -->
+          <div class="tech-grid" id="tech-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- ======================================
+         EXPERIENCIA PROFESIONAL
+    ======================================= -->
+
+      <section class="section" id="experiencia">
+        <div class="container">
+          <p class="eyebrow">MI TRAYECTORIA</p>
+
+          <h2>
+            Experiencia
+            <span class="gradient-text">profesional</span>
+          </h2>
+
+          <div class="timeline">
+            <article class="panel timeline-card">
+              <span class="timeline-dot"></span>
+
+              <span class="tag"> Trabajo independiente </span>
+
+              <h3>Desarrolladora Web Independiente</h3>
+
+              <p>
+                Desarrollo de sitios web personalizados, catálogos digitales y
+                paneles administrativos. Actividad vinculada a Lucila Studio.
+              </p>
+
+              <div class="chips">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Supabase</span>
+              </div>
+
+              <details>
+                <summary>Responsabilidades y proyectos</summary>
+
+                <p>
+                  Desarrollo de interfaces, funcionalidades de catálogo y
+                  herramientas para gestionar productos.
+                </p>
+
+                <p>Proyecto destacado: Virtuosa Inc.</p>
+
+                <a href="proyecto.html?id=virtuosa" class="text-link">
+                  Ver Virtuosa Inc ↗
+                </a>
+              </details>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+         PROYECTOS
+    ======================================= -->
+
+      <section class="section section-muted" id="proyectos">
+        <div class="container">
+          <p class="eyebrow">TRABAJOS Y APRENDIZAJE</p>
+
+          <h2>Mis <span class="gradient-text">proyectos</span></h2>
+
+          <p class="section-intro">
+            Una selección de proyectos profesionales y personales. Los que
+            siguen en desarrollo están identificados.
+          </p>
+
+          <!-- Filtros -->
+          <div class="tabs" aria-label="Filtrar proyectos">
+            <button class="tab active" data-filter="todos">Todos</button>
+
+            <button class="tab" data-filter="profesional">Profesionales</button>
+
+            <button class="tab" data-filter="personal">Personales</button>
+          </div>
+
+          <div class="projects" id="project-list">
+            <!-- Proyecto principal -->
+            <article class="project-feature" data-category="profesional">
+              <div class="project-visual">
+                <div class="mock-browser">
+                  <span>● ● ●</span>
+
+                  <strong>VIRTUOSA INC</strong>
+
+                  <small>
+                    Vista del proyecto · reemplazar con captura real
+                  </small>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="tag"> Profesional · Finalizado </span>
+
+                <h3>Virtuosa Inc</h3>
+
+                <p>
+                  Tienda de indumentaria con catálogo por categorías, carrito
+                  conectado a WhatsApp y panel administrativo para gestionar
+                  productos, talles, precios e imágenes.
+                </p>
+
+                <div class="chips">
+                  <span>Frontend</span>
+                  <span>Catálogo</span>
+                  <span>Panel administrativo</span>
+                </div>
+
+                <a href="proyecto.html?id=virtuosa" class="btn btn-primary">
+                  Conocer el proyecto ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- Proyectos personales -->
+            <div class="project-cards">
+              <article class="panel project-card" data-category="personal">
+                <span class="tag tag-wip"> En desarrollo </span>
+
+                <div class="project-symbol">▦</div>
+
+                <h3>Organizador de exámenes</h3>
+
+                <p>
+                  Aplicación para organizar materias, evaluaciones y temas de
+                  estudio.
+                </p>
+
+                <a href="proyecto.html?id=examenes" class="text-link">
+                  Ver detalles ↗
+                </a>
+              </article>
+
+              <article class="panel project-card" data-category="personal">
+                <span class="tag tag-wip"> En desarrollo </span>
+
+                <div class="project-symbol">▤</div>
+
+                <h3>Panel para kiosco</h3>
+
+                <p>
+                  Herramienta administrativa para un kiosco, sin tienda online.
+                </p>
+
+                <a href="proyecto.html?id=kiosco" class="text-link">
+                  Ver detalles ↗
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+         LUCILA STUDIO
+    ======================================= -->
+
+      <section class="section" id="studio">
+        <div class="container studio-preview">
+          <div>
+            <p class="eyebrow">MI EMPRENDIMIENTO</p>
+
+            <h2>
+              Lucila
+              <span class="gradient-text">Studio</span>
+            </h2>
+
+            <p class="section-intro">
+              Desarrollo y diseño web para negocios y emprendimientos.
+              Propuestas personalizadas, maquetas previas y soluciones adaptadas
+              a cada proyecto.
+            </p>
+
+            <a href="studio.html" class="btn btn-primary">
+              Conocer Lucila Studio ↗
+            </a>
+          </div>
+
+          <div class="studio-mark">LS<span>✦</span></div>
+        </div>
+      </section>
+
+      <!-- ======================================
+         CONTACTO
+    ======================================= -->
+
+      <section class="section section-muted" id="contacto">
+        <div class="container">
+          <p class="eyebrow">HABLEMOS</p>
+
+          <h2>
+            ¿Trabajamos
+            <span class="gradient-text">juntos?</span>
+          </h2>
+
+          <div class="contact-grid">
+            <!-- Formulario -->
+            <form class="panel contact-form" id="contact-form">
+              <label>
+                Nombre
+                <input
+                  type="text"
+                  name="nombre"
+                  required
+                  autocomplete="name"
+                  placeholder="Tu nombre"
+                />
+              </label>
+
+              <label>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="tu@email.com"
+                />
+              </label>
+
+              <label>
+                Empresa (opcional)
+                <input
+                  type="text"
+                  name="empresa"
+                  placeholder="Nombre de la empresa"
+                />
+              </label>
+
+              <label>
+                Tipo de oportunidad
+
+                <select name="tipo" required>
+                  <option value="">Seleccionar</option>
+                  <option>Empleo</option>
+                  <option>Proyecto freelance</option>
+                  <option>Colaboración</option>
+                  <option>Otra consulta</option>
+                </select>
+              </label>
+
+              <label>
+                Mensaje
+                <textarea
+                  name="mensaje"
+                  required
+                  rows="5"
+                  placeholder="Contame sobre tu propuesta"
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="submit">
+                ✉ Preparar mensaje
+              </button>
+
+              <p class="form-note" id="form-note">
+                Por ahora se abrirá tu aplicación de correo con el mensaje
+                preparado.
+              </p>
+            </form>
+
+            <!-- Redes y contacto -->
+            <div class="contact-side">
+              <a
+                class="panel contact-link"
+                href="mailto:lucilaarteiro2003@gmail.com"
+              >
+                <strong>✉ Email profesional</strong>
+                <span> lucilaarteiro2003@gmail.com ↗ </span>
+              </a>
+
+              <a
+                class="panel contact-link"
+                href="https://www.linkedin.com/in/lucila-arteiro/"
+                target="_blank"
+                rel="noopener"
+              >
+                <strong>▣ LinkedIn</strong>
+                <span>Ver perfil profesional ↗</span>
+              </a>
+
+              <a
+                class="panel contact-link"
+                href="https://github.com/LucilaArteiro"
+                target="_blank"
+                rel="noopener"
+              >
+                <strong>⌘ GitHub</strong>
+                <span>Explorar repositorios ↗</span>
+              </a>
+
+              <a
+                class="panel contact-link"
+                href="assets/cv-lucila-arteiro.pdf"
+                download
+              >
+                <strong>↓ Descargar CV</strong>
+                <span>Currículum en PDF ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================
+       PIE DE PÁGINA
+  ======================================= -->
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Lucila Arteiro</strong>
+          <p>Desarrolladora Web Frontend</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="studio.html">Lucila Studio</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <p>© <span id="year"></span> Lucila Arteiro</p>
+
+        <a href="#inicio" class="back-top" aria-label="Volver arriba"> ↑ </a>
+      </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a
+      href="https://wa.me/5493416752798"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactarme por WhatsApp"
+      title="Escribime por WhatsApp"
+    >
+      <img src="assets/logos/whatsapp.svg" alt="" />
+    </a>
+  </body>
+</html>
