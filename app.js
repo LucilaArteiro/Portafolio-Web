@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Imagen SVG
       const logo = document.createElement('img')
 
-      logo.src = `assets/logos/${technology.icon}`
+      logo.src = `./assets/Logos/${technology.icon}`
       logo.alt = ''
       logo.className = 'tech-logo'
       logo.loading = 'lazy'
